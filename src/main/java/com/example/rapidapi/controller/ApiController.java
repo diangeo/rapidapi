@@ -21,4 +21,11 @@ public class ApiController {
     public String getAlluArjunImages(@PathVariable String query) {
         return rapidApiService.makeRapidApiRequest(query);
     }
+
+    @GetMapping("/welcome")
+    public String welcome(){
+        return "Welcome to RapidAPI";
+    }
+
+
 }
